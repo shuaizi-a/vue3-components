@@ -18,6 +18,7 @@ library.add(fas)
 
 // 引入自定义组件
 import Icon from './components/Icon/Icon.vue'
+import Button from './components/Button/Button.vue'
 
 const app = createApp(App)
 
@@ -26,6 +27,7 @@ app.component('font-awesome-icon', FontAwesomeIcon)
 
 // 注册自定义组件
 app.component('Duyi-Icon', Icon)
+app.component('Duyi-Button', Button)
 
 app.use(router)
 
