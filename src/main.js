@@ -21,6 +21,7 @@ import Icon from './components/Icon/Icon.vue'
 import Button from './components/Button/Button.vue'
 import Card from './components/Card/Card.vue'
 import Dialog from './components/Dialog/Dialog.vue'
+import Pager from './components/Pager/Pager.vue'
 
 const app = createApp(App)
 
@@ -32,6 +33,7 @@ app.component('Duyi-Icon', Icon)
 app.component('Duyi-Button', Button)
 app.component('Duyi-Card', Card)
 app.component('Duyi-Dialog', Dialog)
+app.component('Duyi-Pager', Pager)
 
 app.use(router)
 
