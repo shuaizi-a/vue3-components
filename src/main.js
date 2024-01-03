@@ -20,6 +20,7 @@ library.add(fas)
 import Icon from './components/Icon/Icon.vue'
 import Button from './components/Button/Button.vue'
 import Card from './components/Card/Card.vue'
+import Dialog from './components/Dialog/Dialog.vue'
 
 const app = createApp(App)
 
@@ -30,6 +31,7 @@ app.component('font-awesome-icon', FontAwesomeIcon)
 app.component('Duyi-Icon', Icon)
 app.component('Duyi-Button', Button)
 app.component('Duyi-Card', Card)
+app.component('Duyi-Dialog', Dialog)
 
 app.use(router)
 
