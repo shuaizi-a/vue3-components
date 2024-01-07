@@ -22,6 +22,8 @@ import Button from './components/Button/Button.vue'
 import Card from './components/Card/Card.vue'
 import Dialog from './components/Dialog/Dialog.vue'
 import Pager from './components/Pager/Pager.vue'
+import Collapse from './components/Collapse/Collapse.vue'
+import CollapseItem from './components/Collapse/CollapseItem.vue'
 
 const app = createApp(App)
 
@@ -34,6 +36,8 @@ app.component('Duyi-Button', Button)
 app.component('Duyi-Card', Card)
 app.component('Duyi-Dialog', Dialog)
 app.component('Duyi-Pager', Pager)
+app.component('Duyi-Collapse', Collapse)
+app.component('Duyi-CollapseItem', CollapseItem)
 
 app.use(router)
 
