@@ -1,3 +1,11 @@
+/*
+ * @Author: 张帅 77367582@qq.com
+ * @Date: 2023-12-24 21:03:53
+ * @LastEditors: 张帅 77367582@qq.com
+ * @LastEditTime: 2024-01-08 20:27:01
+ * @FilePath: /shuaizi-plus/src/main.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -24,6 +32,7 @@ import Dialog from './components/Dialog/Dialog.vue'
 import Pager from './components/Pager/Pager.vue'
 import Collapse from './components/Collapse/Collapse.vue'
 import CollapseItem from './components/Collapse/CollapseItem.vue'
+import Tooltip from './components/Tooltip/Tooltip.vue'
 
 const app = createApp(App)
 
@@ -38,6 +47,7 @@ app.component('Duyi-Dialog', Dialog)
 app.component('Duyi-Pager', Pager)
 app.component('Duyi-Collapse', Collapse)
 app.component('Duyi-CollapseItem', CollapseItem)
+app.component('Duyi-Tooltip', Tooltip)
 
 app.use(router)
 
