@@ -1,33 +1,33 @@
-.duyi-pager {
-  --duyi-pager-theme-color: var(--duyi-color-primary);
-  --duyi-pager-size: 34px;
-  --duyi-pager-padding: 0 12px;
-  --duyi-pager-font-size: var(--duyi-font-size-base);
+.Sz-pager {
+  --Sz-pager-theme-color: var(--Sz-color-primary);
+  --Sz-pager-size: 34px;
+  --Sz-pager-padding: 0 12px;
+  --Sz-pager-font-size: var(--Sz-font-size-base);
 }
-.duyi-pager {
+.Sz-pager {
   text-align: center;
   a {
     border: 1px solid #e1e2e3;
     background-color: #f0f2f5;
     color: #303133;
-    height: var(--duyi-pager-size);
+    height: var(--Sz-pager-size);
     display: inline-block;
-    line-height: var(--duyi-pager-size);
+    line-height: var(--Sz-pager-size);
     border-radius: 2px;
-    padding: var(--duyi-pager-padding);
+    padding: var(--Sz-pager-padding);
     margin: 8px;
-    font-size: var(--duyi-pager-font-size);
+    font-size: var(--Sz-pager-font-size);
     cursor: pointer;
     user-select: none;
     &:hover {
-      color: var(--duyi-pager-theme-color);
+      color: var(--Sz-pager-theme-color);
     }
     /* 当前页会挂上 active 类 */
     &.active {
       //   border: none;
       color: #fff;
-      background-color: var(--duyi-pager-theme-color);
-      border-color: var(--duyi-pager-theme-color);
+      background-color: var(--Sz-pager-theme-color);
+      border-color: var(--Sz-pager-theme-color);
     }
     /* a 标签禁用的时候会挂上 disabled 类 */
     &.disabled {
@@ -38,19 +38,19 @@
 }
 
 @each $val in primary, success, warning, info, danger {
-  .duyi-pager--#{$val} {
-    --duyi-pager-theme-color: var(--duyi-color-#{$val});
+  .Sz-pager--#{$val} {
+    --Sz-pager-theme-color: var(--Sz-color-#{$val});
   }
 }
 
-.duyi-pager--small {
-  --duyi-pager-size: 25px;
-  --duyi-pager-padding: 0 8px;
-  --duyi-pager-font-size: var(--duyi-font-size-small);
+.Sz-pager--small {
+  --Sz-pager-size: 25px;
+  --Sz-pager-padding: 0 8px;
+  --Sz-pager-font-size: var(--Sz-font-size-small);
 }
 
-.duyi-pager--large {
-  --duyi-pager-size: 44px;
-  --duyi-pager-padding: 0 16px;
-  --duyi-pager-font-size: var(--duyi-font-size-large);
+.Sz-pager--large {
+  --Sz-pager-size: 44px;
+  --Sz-pager-padding: 0 16px;
+  --Sz-pager-font-size: var(--Sz-font-size-large);
 }

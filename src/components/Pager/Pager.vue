@@ -1,10 +1,10 @@
 <template>
   <!-- 这个是最外层的容器 -->
   <div
-    class="duyi-pager"
+    class="Sz-pager"
     :class="{
-      [`duyi-pager--${type}`]: type,
-      [`duyi-pager--${size}`]: size
+      [`Sz-pager--${type}`]: type,
+      [`Sz-pager--${size}`]: size
     }"
   >
     <!-- 首页 -->
@@ -14,14 +14,14 @@
       :disabled="currentPage === 1 ? true : false"
       @click.prevent="prevClick"
     >
-      <Duyi-Icon icon="angles-left" />
+      <Sz-Icon icon="angles-left" />
     </a>
     <!-- 上一页 -->
     <!-- 接下来我们的重点就是中间应该如何进行渲染 -->
     <!-- 我们需要根据计算出来的 pager 来进行渲染 -->
     <a v-if="total > pagerCount && currentPage > 5" @click.prevent="pageClick(1)">1</a>
     <a v-if="total > pagerCount && currentPage > 5">
-      <Duyi-Icon icon="ellipsis" size="sm" />
+      <Sz-Icon icon="ellipsis" size="sm" />
     </a>
     <a
       v-for="page in pager"
@@ -31,7 +31,7 @@
       >{{ page }}</a
     >
     <a v-if="total > pagerCount && currentPage < total - 4">
-      <Duyi-Icon icon="ellipsis" size="sm" />
+      <Sz-Icon icon="ellipsis" size="sm" />
     </a>
     <a v-if="total > pagerCount && currentPage < total - 4" @click.prevent="pageClick(total)">
       {{ total }}
@@ -42,7 +42,7 @@
       @click.prevent="nextClick"
       :disabled="currentPage === total ? true : false"
     >
-      <Duyi-Icon icon="angles-right" />
+      <Sz-Icon icon="angles-right" />
     </a>
     <!-- 尾页 -->
     <a :class="currentPage === total ? 'disabled' : ''" @click.prevent="goToLastPage">尾页</a>
@@ -53,7 +53,7 @@
 import { computed } from 'vue'
 import propObj from './props'
 defineOptions({
-  name: 'Duyi-Pager'
+  name: 'Sz-Pager'
 })
 const props = defineProps(propObj)
 

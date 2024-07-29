@@ -1,48 +1,48 @@
 <template>
   <h1 class="row-title">折叠面板</h1>
   <div class="row">
-    <Duyi-Collapse v-model="openedValue" @change="changeHandle">
-      <Duyi-CollapseItem name="a" title="home">
+    <Sz-Collapse v-model="openedValue" @change="changeHandle">
+      <Sz-CollapseItem name="a" title="home">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, temporibus.
-      </Duyi-CollapseItem>
-      <Duyi-CollapseItem name="b" title="about">
+      </Sz-CollapseItem>
+      <Sz-CollapseItem name="b" title="about">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, facilis?
-      </Duyi-CollapseItem>
-      <Duyi-CollapseItem name="c" title="content">
+      </Sz-CollapseItem>
+      <Sz-CollapseItem name="c" title="content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sint voluptatem fugit
         accusantium! Molestias, quod?
-      </Duyi-CollapseItem>
-      <Duyi-CollapseItem name="d" title="contact" disabled>
+      </Sz-CollapseItem>
+      <Sz-CollapseItem name="d" title="contact" disabled>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci ab nam necessitatibus!
-      </Duyi-CollapseItem>
-    </Duyi-Collapse>
+      </Sz-CollapseItem>
+    </Sz-Collapse>
   </div>
   <h1 class="row-title">手风琴模式</h1>
   <div class="row">
-    <Duyi-Collapse v-model="openedValue2" @change="changeHandle" accordion>
-      <Duyi-CollapseItem name="a" title="home">
+    <Sz-Collapse v-model="openedValue2" @change="changeHandle" accordion>
+      <Sz-CollapseItem name="a" title="home">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, temporibus.
-      </Duyi-CollapseItem>
-      <Duyi-CollapseItem name="b" title="about">
+      </Sz-CollapseItem>
+      <Sz-CollapseItem name="b" title="about">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, facilis?
-      </Duyi-CollapseItem>
-      <Duyi-CollapseItem name="c" title="content">
+      </Sz-CollapseItem>
+      <Sz-CollapseItem name="c" title="content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sint voluptatem fugit
         accusantium! Molestias, quod?
-      </Duyi-CollapseItem>
-      <Duyi-CollapseItem name="d" title="contact" disabled>
+      </Sz-CollapseItem>
+      <Sz-CollapseItem name="d" title="contact" disabled>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci ab nam necessitatibus!
-      </Duyi-CollapseItem>
-    </Duyi-Collapse>
+      </Sz-CollapseItem>
+    </Sz-Collapse>
   </div>
   <h1 class="row-title">自定义标题</h1>
   <div class="row">
-    <Duyi-Collapse v-model="openedValue3" accordion>
-      <Duyi-CollapseItem name="Consistency" title="Consistency">
+    <Sz-Collapse v-model="openedValue3" accordion>
+      <Sz-CollapseItem name="Consistency" title="Consistency">
         <template #title>
           <div class="titleContainer">
             <span class="title">Consistency</span>
-            <Duyi-Icon icon="house" />
+            <Sz-Icon icon="house" />
           </div>
         </template>
         <div>
@@ -53,12 +53,12 @@
           Consistent within interface: all elements should be consistent, such as: design style,
           icons and texts, position of elements, etc.
         </div>
-      </Duyi-CollapseItem>
-      <Duyi-CollapseItem name="Feedback">
+      </Sz-CollapseItem>
+      <Sz-CollapseItem name="Feedback">
         <template #title>
           <div class="titleContainer">
             <span class="title">Feedback</span>
-            <Duyi-Icon icon="image" />
+            <Sz-Icon icon="image" />
           </div>
         </template>
         <div>
@@ -68,11 +68,11 @@
         <div>
           Visual feedback: reflect current state by updating or rearranging elements of the page.
         </div>
-      </Duyi-CollapseItem>
-      <Duyi-CollapseItem name="Efficiency">
+      </Sz-CollapseItem>
+      <Sz-CollapseItem name="Efficiency">
         <template #title>
           <div class="titleContainer">
-            <Duyi-Icon icon="phone" />
+            <Sz-Icon icon="phone" />
             <span class="title">Efficiency</span>
           </div>
         </template>
@@ -85,11 +85,11 @@
           Easy to identify: the interface should be straightforward, which helps the users to
           identify and frees them from memorizing and recalling.
         </div>
-      </Duyi-CollapseItem>
-      <Duyi-CollapseItem name="Controllability" title="Controllability">
+      </Sz-CollapseItem>
+      <Sz-CollapseItem name="Controllability" title="Controllability">
         <template #title>
           <div class="titleContainer">
-            <Duyi-Icon icon="star" />
+            <Sz-Icon icon="star" />
             <span class="title">Controllability</span>
           </div>
         </template>
@@ -101,8 +101,8 @@
           Controlled consequences: users should be granted the freedom to operate, including
           canceling, aborting or terminating current operation.
         </div>
-      </Duyi-CollapseItem>
-    </Duyi-Collapse>
+      </Sz-CollapseItem>
+    </Sz-Collapse>
   </div>
 </template>
 

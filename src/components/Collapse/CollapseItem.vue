@@ -1,14 +1,14 @@
 <template>
   <!-- 外层容器 -->
   <div
-    class="duyi-collapse-item"
+    class="Sz-collapse-item"
     :class="{
       'is-disabled': disabled
     }"
   >
     <!-- 标题部分 -->
     <div
-      class="duyi-collapse-item__header"
+      class="Sz-collapse-item__header"
       :class="{
         'is-disabled': disabled,
         // isActive 并非父组件传递过来的
@@ -20,12 +20,12 @@
     >
       <slot name="title">{{ title }}</slot>
       <!-- 右侧的图标 -->
-      <Duyi-Icon icon="angle-right" class="header-angle" />
+      <Sz-Icon icon="angle-right" class="header-angle" />
     </div>
     <!-- 内容部分 -->
     <Transition name="slide" v-on="transitionEvents">
-      <div class="duyi-collapse-item__wrapper" v-show="isActive">
-        <div class="duyi-collapse-item__content" :id="`item-content-${title}`">
+      <div class="Sz-collapse-item__wrapper" v-show="isActive">
+        <div class="Sz-collapse-item__content" :id="`item-content-${title}`">
           <slot />
         </div>
       </div>
@@ -37,7 +37,7 @@
 import { inject, computed } from 'vue'
 import { collapseItemProps, collapseContextKey } from './props'
 defineOptions({
-  name: 'Duyi-CollapseItem'
+  name: 'Sz-CollapseItem'
 })
 
 // 通过 inject 可以拿到 Collapse 组件提供的方法

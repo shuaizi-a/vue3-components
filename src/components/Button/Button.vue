@@ -1,10 +1,10 @@
 <template>
   <button
     ref="_ref"
-    class="duyi-button"
+    class="Sz-button"
     :class="{
-      [`duyi-button--${type}`]: type,
-      [`duyi-button--${size}`]: size,
+      [`Sz-button--${type}`]: type,
+      [`Sz-button--${size}`]: size,
       'is-plain': plain,
       'is-round': round,
       'is-circle': circle,
@@ -12,8 +12,8 @@
     }"
     :disabled="disabled || loading"
   >
-    <Duyi-Icon icon="spinner" spin v-if="loading" />
-    <Duyi-Icon :icon="icon" v-if="icon" />
+    <Sz-Icon icon="spinner" spin v-if="loading" />
+    <Sz-Icon :icon="icon" v-if="icon" />
     <span v-if="$slots.default">
       <slot />
     </span>
@@ -24,7 +24,7 @@
 import { ref } from 'vue'
 import propObj from './props'
 defineOptions({
-  name: 'Duyi-Button'
+  name: 'Sz-Button'
 })
 defineProps(propObj)
 

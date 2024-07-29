@@ -43,6 +43,11 @@ const router = createRouter({
       path: '/dropdown',
       name: 'dropdown',
       component: () => import('../views/DropdownView.vue')
+    },
+    {
+      path: '/input',
+      name: 'input',
+      component: () => import('../views/InputView.vue')
     }
   ],
   linkActiveClass: 'active'

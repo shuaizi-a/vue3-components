@@ -9,6 +9,7 @@
     <router-link to="/collapse">Collapse</router-link>
     <router-link to="/tooltip">Tooltip</router-link>
     <router-link to="/dropdown">Dropdown</router-link>
+    <router-link to="/input">Input</router-link>
   </nav>
   <div class="displayArea">
     <router-view></router-view>

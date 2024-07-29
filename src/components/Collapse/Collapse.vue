@@ -1,5 +1,5 @@
 <template>
-  <div class="duyi-collapse">
+  <div class="Sz-collapse">
     <slot />
   </div>
 </template>
@@ -8,7 +8,7 @@
 import { ref, provide } from 'vue'
 import { collapseProps, collapseContextKey } from './props'
 defineOptions({
-  name: 'Duyi-Collapse'
+  name: 'Sz-Collapse'
 })
 
 const emit = defineEmits(['change', 'update:modelValue'])

@@ -40,14 +40,14 @@ const app = createApp(App)
 app.component('font-awesome-icon', FontAwesomeIcon)
 
 // 注册自定义组件
-app.component('Duyi-Icon', Icon)
-app.component('Duyi-Button', Button)
-app.component('Duyi-Card', Card)
-app.component('Duyi-Dialog', Dialog)
-app.component('Duyi-Pager', Pager)
-app.component('Duyi-Collapse', Collapse)
-app.component('Duyi-CollapseItem', CollapseItem)
-app.component('Duyi-Tooltip', Tooltip)
+app.component('Sz-Icon', Icon)
+app.component('Sz-Button', Button)
+app.component('Sz-Card', Card)
+app.component('Sz-Dialog', Dialog)
+app.component('Sz-Pager', Pager)
+app.component('Sz-Collapse', Collapse)
+app.component('Sz-CollapseItem', CollapseItem)
+app.component('Sz-Tooltip', Tooltip)
 
 app.use(router)
 

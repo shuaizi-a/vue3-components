@@ -1,12 +1,12 @@
 <template>
-  <div class="duyi-tooltip" v-on="outerEvents">
+  <div class="Sz-tooltip" v-on="outerEvents">
     <!-- 触发的元素，设置为一个插槽 -->
-    <div class="duyi-tooltip__trigger" ref="triggerRef" v-on="events">
+    <div class="Sz-tooltip__trigger" ref="triggerRef" v-on="events">
       <slot />
     </div>
     <!-- 要显示的提示内容 -->
     <!-- 考虑有些时候提示内容会比较复杂，因此这里仍然是提供插槽的形式 -->
-    <div class="duyi-tooltip__popper" ref="popperRef" v-if="isOpen">
+    <div class="Sz-tooltip__popper" ref="popperRef" v-if="isOpen">
       <slot name="content">
         {{ content }}
       </slot>
@@ -22,7 +22,7 @@ import { createPopper } from '@popperjs/core'
 import propObj from './props'
 import { debounce } from 'lodash-es'
 defineOptions({
-  name: 'Duyi-Tooltip'
+  name: 'Sz-Tooltip'
 })
 const props = defineProps(propObj)
 
